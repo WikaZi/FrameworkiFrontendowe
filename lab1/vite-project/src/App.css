@@ -1,3 +1,9 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .car-profile {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -13,6 +19,7 @@
 .car-profile p {
   margin: 4px 0;
 }
+
 
 
 /* #root {

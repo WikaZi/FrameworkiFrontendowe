@@ -1,0 +1,16 @@
+.car-profile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .car-profile h2 {
+    margin-top: 0;
+  }
+  
+  .car-profile p {
+    margin: 4px 0;
+  }
+  

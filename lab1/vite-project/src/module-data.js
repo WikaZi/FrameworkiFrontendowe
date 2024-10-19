@@ -2,106 +2,106 @@ export const data = [
 
         { 
         id: 1,
-        brand: "BMW",
-        productionDate: "2009-04-17",
-        plateNumber: "SZQ6436"
+        brand: "Mercedes",
+        productionDate: "2021-12-30",
+        plateNumber: "COA6028"
         },
 
         { 
         id: 2,
-        brand: "BMW",
-        productionDate: "2000-12-17",
-        plateNumber: "OMZ2717"
+        brand: "Mitsubishi",
+        productionDate: "2001-06-08",
+        plateNumber: "MEX8843"
         },
 
         { 
         id: 3,
-        brand: "Honda",
-        productionDate: "1996-02-03",
-        plateNumber: "UHD0613"
+        brand: "Mercedes",
+        productionDate: "1994-10-13",
+        plateNumber: "ONL9089"
         },
 
         { 
         id: 4,
-        brand: "Mitsubishi",
-        productionDate: "1994-11-12",
-        plateNumber: "PZX7081"
+        brand: "Audi",
+        productionDate: "2016-03-06",
+        plateNumber: "SSA9793"
         },
 
         { 
         id: 5,
-        brand: "BMW",
-        productionDate: "2010-10-08",
-        plateNumber: "XYC6282"
+        brand: "Mercedes",
+        productionDate: "2019-05-29",
+        plateNumber: "SGX4756"
         },
 
         { 
         id: 6,
-        brand: "Honda",
-        productionDate: "2015-10-02",
-        plateNumber: "RGW8164"
+        brand: "Audi",
+        productionDate: "2022-04-02",
+        plateNumber: "XRQ4864"
         },
 
         { 
         id: 7,
-        brand: "Mercedes",
-        productionDate: "1998-11-02",
-        plateNumber: "FUG5281"
+        brand: "Toyota",
+        productionDate: "1991-11-23",
+        plateNumber: "ZDD7971"
         },
 
         { 
         id: 8,
-        brand: "Honda",
-        productionDate: "2022-08-09",
-        plateNumber: "HLS6179"
+        brand: "Mercedes",
+        productionDate: "2008-09-18",
+        plateNumber: "MJM2904"
         },
 
         { 
         id: 9,
         brand: "Audi",
-        productionDate: "2011-11-22",
-        plateNumber: "VNZ1339"
+        productionDate: "2004-07-26",
+        plateNumber: "FWD2590"
         },
 
         { 
         id: 10,
-        brand: "Honda",
-        productionDate: "1997-01-14",
-        plateNumber: "KMU4881"
+        brand: "Mercedes",
+        productionDate: "1992-07-12",
+        plateNumber: "DMB9573"
         },
 
         { 
         id: 11,
-        brand: "BMW",
-        productionDate: "2001-12-13",
-        plateNumber: "ACR6480"
+        brand: "Audi",
+        productionDate: "1996-06-09",
+        plateNumber: "QJP2808"
         },
 
         { 
         id: 12,
-        brand: "Mercedes",
-        productionDate: "2018-04-21",
-        plateNumber: "LBB8350"
+        brand: "Toyota",
+        productionDate: "2021-08-03",
+        plateNumber: "RHB9412"
         },
 
         { 
         id: 13,
-        brand: "Mercedes",
-        productionDate: "2014-11-17",
-        plateNumber: "SXP0425"
+        brand: "Audi",
+        productionDate: "2011-12-13",
+        plateNumber: "EXJ8575"
         },
 
         { 
         id: 14,
         brand: "BMW",
-        productionDate: "2009-12-01",
-        plateNumber: "NZK2752"
+        productionDate: "2001-09-02",
+        plateNumber: "CBA6305"
         },
 
         { 
         id: 15,
-        brand: "Honda",
-        productionDate: "2011-04-29",
-        plateNumber: "KHH4771"
+        brand: "Mitsubishi",
+        productionDate: "2018-07-12",
+        plateNumber: "OXF3435"
         }
 ];

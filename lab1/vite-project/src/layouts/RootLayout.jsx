@@ -1,35 +1,26 @@
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavBarMenu from '../components/NavBarMenu'; // Poprawna ścieżka
+import Footer from '../components/Footer'; // Poprawna ścieżka
+import PropTypes from 'prop-types';
 
-function BasicExample() {
-  return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
+const RootLayout = ({ children }) => {
+    const menuItems = [
+        { id: 1, label: "Home", path: "/" },
+        { id: 2, label: "Laboratorium 1", path: "/lab1" },
+        { id: 3, label: "Laboratorium 2", path: "/lab2" },
+    ];
 
-export default BasicExample;
+    return (
+        <div>
+            <NavBarMenu items={menuItems} />
+            <main>{children}</main> {/* Tutaj będą renderowane inne strony */}
+            
+            <Footer />
+        </div>
+    );
+};
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired, // children może być dowolnym węzłem React
+};
+
+export default RootLayout;

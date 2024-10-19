@@ -1,0 +1,16 @@
+
+footer {
+    
+    margin-top: auto;
+    background-color: #f8f9fa; /* Jasne tło */
+    padding: 20px; /* Wewnętrzny odstęp */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    position: relative; /* Normalne umiejscowienie */
+    bottom: 0; /* Przyklejona do dołu */
+}
+
+footer img {
+    width: 100px; /* Ustal szerokość obrazka */
+    height: auto; /* Automatyczna wysokość, aby zachować proporcje */
+    align-items: center;
+}
