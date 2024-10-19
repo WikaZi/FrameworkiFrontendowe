@@ -1,6 +1,6 @@
 
-import NavBarMenu from '../components/NavBarMenu'; // Poprawna ścieżka
-import Footer from '../components/Footer'; // Poprawna ścieżka
+import NavBarMenu from '../components/NavBarMenu'; 
+import Footer from '../components/Footer'; 
 import PropTypes from 'prop-types';
 
 const RootLayout = ({ children }) => {
@@ -13,14 +13,13 @@ const RootLayout = ({ children }) => {
     return (
         <div>
             <NavBarMenu items={menuItems} />
-            <main>{children}</main> {/* Tutaj będą renderowane inne strony */}
-            
+            <main>{children}</main> 
             <Footer />
         </div>
     );
 };
 RootLayout.propTypes = {
-  children: PropTypes.node.isRequired, // children może być dowolnym węzłem React
+  children: PropTypes.node.isRequired, 
 };
 
 export default RootLayout;

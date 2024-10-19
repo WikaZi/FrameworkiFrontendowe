@@ -6,8 +6,7 @@ const Lab1 = () => {
     return (
         <div>
              <div className="app">
-            <h1>Car Profiles</h1>
-            {/* Przechodzimy przez każdy element w tablicy carData i generujemy komponent CarProfile */}
+            
             {carData.length > 0 ? (
                 carData.map((car) => (
                     <CarProfile key={car.id} car={car} /> 

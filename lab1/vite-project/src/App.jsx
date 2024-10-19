@@ -1,11 +1,9 @@
-//import CarProfile from './components/CarProfile'; 
-//import { data as carData } from './data/module-data'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RootLayout from './layouts/RootLayout'; // Upewnij się, że ścieżka jest poprawna
-import Home from './pages/Home'; // Upewnij się, że ścieżka jest poprawna
-import Lab1 from './pages/Lab1'; // Strona Laboratorium 1
-//import Lab2 from './pages/Lab2'; // Strona Laboratorium 2
+import RootLayout from './layouts/RootLayout'; 
+import Home from './pages/Home'; 
+import Lab1 from './pages/Lab1';
+import Lab2 from './pages/Lab2'; 
 
 const App = () => {
     return (
@@ -13,7 +11,8 @@ const App = () => {
             <RootLayout>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/lab1" element={<Lab1 />} /> {/* Trasa do Lab1 */}
+                    <Route path="/lab1" element={<Lab1 />} />
+                    <Route path="/lab2" element={<Lab2 />} />
                 </Routes>
             </RootLayout>
         </Router>

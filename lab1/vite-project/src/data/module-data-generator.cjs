@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const count = Number(process.argv[2] ? Number(process.argv[2]) : 10); // odczyt liczby obiektów
-let cars = [];                        // tablica z obiektami 
+let cars = [];                        
 
 
 function getRandomDate(startYear, endYear) {

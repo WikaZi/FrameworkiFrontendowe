@@ -1,23 +1,24 @@
-/* src/styles/global.css */
+
 html, body {
-  height: 100%; /* Ustaw wysokość na 100% */
-  margin: 0; /* Usuń domyślne marginesy */
+  height: 100%; 
+  margin: 0; 
 }
 
 .layout {
-  display: flex; /* Ustawienie Flexbox */
-  flex-direction: column; /* Ustawienie kolumny */
-  min-height: 100vh; /* Minimalna wysokość na 100vh */
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
 }
 
 main {
-  flex: 1; /* Pozwól głównemu kontentowi zająć pozostałą przestrzeń */
+  flex: 1; 
+ 
 }
 
 footer {
-  background-color: #f8f9fa; /* Kolor tła dla stopki */
-  padding: 1rem; /* Padding */
-  text-align: center; /* Wyśrodkowanie tekstu */
+  background-color: #f8f9fa; 
+  padding: 1rem;
+  text-align: center;
 }
 .car-profile {
   border: 1px solid #ccc;
