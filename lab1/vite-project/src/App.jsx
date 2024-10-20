@@ -4,11 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Lab1 from './pages/Lab1';
 import Lab2 from './pages/Lab2';
-//import NotFound from './pages/NotFound';
-//import menuItems from './data/menuItems';
-//import NavBarMenu from './components/NavBarMenu';
-
-
 
   
 

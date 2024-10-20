@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Home from '../pages/Home';
 import Lab1 from '../pages/Lab1';
 import Lab2 from '../pages/Lab2';
-//import menuItems from '../data/menuItems';
+
 const menuItems = [
     {
       id: 1,
@@ -24,8 +24,8 @@ const menuItems = [
     {
       id: 3,
       label: "Laboratorium 2",
-      url: "/lab2/1",  // Przykładowa domyślna ścieżka
-      urlPattern: "/lab2/:id",  // Obsługa parametru id
+      url: "/lab2",  
+      urlPattern: "/lab2/:id", 
       element: <Lab2/>,
     },
   ];
