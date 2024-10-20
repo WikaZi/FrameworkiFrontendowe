@@ -1,11 +1,7 @@
-
-import NavBarMenu from '../components/NavBarMenu'; 
-import Footer from '../components/Footer'; 
-import PropTypes from 'prop-types';
 import Home from '../pages/Home';
 import Lab1 from '../pages/Lab1';
 import Lab2 from '../pages/Lab2';
-//import menuItems from '../data/menuItems';
+
 const menuItems = [
     {
       id: 1,
@@ -29,20 +25,6 @@ const menuItems = [
       element: <Lab2/>,
     },
   ];
-
-const RootLayout = ({ children }) => {
-   
-
-    return (
-        <div>
-            <NavBarMenu items={menuItems} />
-            <main>{children}</main> 
-            <Footer />
-        </div>
-    );
-};
-RootLayout.propTypes = {
-  children: PropTypes.node.isRequired, 
-};
-
-export default RootLayout;
+  
+  export default menuItems;
+  

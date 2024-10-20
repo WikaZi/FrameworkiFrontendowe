@@ -1,7 +1,9 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import menuItems from '../data/menuItems';
+//import PropTypes from 'prop-types';
 
 
 function BasicExample() {
@@ -12,9 +14,11 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/lab1">Laboratorium 1</Nav.Link>
-            <Nav.Link href="/lab2">Laboratorium 2</Nav.Link>
+          {menuItems.map((item) => (
+              <Nav.Link href={item.url} key={item.id}>
+                {item.label}
+              </Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>
