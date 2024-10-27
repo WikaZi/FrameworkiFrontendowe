@@ -3,8 +3,16 @@ import { useState } from 'react';
 
 const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
     const [rating, setRating] = useState(car.rating || 0);
+    
     const handleRate = () => {
-        onRate(car.id, rating); }; 
+        if (rating === 10) {
+            setRating(0); 
+        } else {
+            setRating((prevRating) => Math.min(prevRating + 1, 10)); 
+        }
+        onRate(car.id, rating);
+    
+    }; 
     return (
         
         <div className="car-profile">
