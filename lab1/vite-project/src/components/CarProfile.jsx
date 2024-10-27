@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 const CarProfile = ({ car }) => {
     return (
         <div className="car-profile">
-            <h2>Car Profile</h2>
+            <h6>Car Profile</h6>
             <p><strong>ID:</strong> {car.id}</p>
             <p><strong>Brand:</strong> {car.brand}</p>
             <p><strong>Production Date:</strong> {car.productionDate}</p>
             <p><strong>Plate Number:</strong> {car.plateNumber}</p>
+            <p><strong>Rating:</strong> {car.rating}</p>
         </div>
     );
 };
@@ -19,6 +20,7 @@ CarProfile.propTypes = {
         brand: PropTypes.string.isRequired,
         productionDate: PropTypes.string.isRequired,
         plateNumber: PropTypes.string.isRequired,
+        rating: PropTypes.string.isRequired
     }).isRequired,
 };
 

@@ -22,7 +22,9 @@ function getRandomPlateNumber() {
     }
     return plate;
 }
-
+function getRandomRating() {
+    return Math.floor(Math.random() * 11); 
+}
 
 
 
@@ -41,6 +43,7 @@ fs.readFile('./src/cars.txt', 'utf8', (err, data) => {
         const brand = carBrands[Math.floor(Math.random() * carBrands.length)];
         const productionDate = getRandomDate(1990, 2023);
         const plateNumber = getRandomPlateNumber();
+        const rating = getRandomRating();
         
         
         content +=`
@@ -48,14 +51,15 @@ fs.readFile('./src/cars.txt', 'utf8', (err, data) => {
         id: ${id},
         brand: "${brand}",
         productionDate: "${productionDate}",
-        plateNumber: "${plateNumber}"
+        plateNumber: "${plateNumber}",
+        rating: "${rating}"
         },\n`;
     
     }
     
     content = content.trim().slice(0, -1) + "\n];";
     
-    fs.writeFile('./src/module-data.js', content, (err) => {
+    fs.writeFile('./src/data/module-data.js', content, (err) => {
         if (err) {
            console.error(err);
         }

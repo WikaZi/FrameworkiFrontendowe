@@ -3,105 +3,120 @@ export const data = [
         { 
         id: 1,
         brand: "Honda",
-        productionDate: "2004-07-17",
-        plateNumber: "EQG9015"
+        productionDate: "2009-11-08",
+        plateNumber: "QXZ8229",
+        rating: "10"
         },
 
         { 
         id: 2,
-        brand: "BMW",
-        productionDate: "2007-02-17",
-        plateNumber: "UMA2918"
+        brand: "Audi",
+        productionDate: "2000-01-19",
+        plateNumber: "LSV2839",
+        rating: "2"
         },
 
         { 
         id: 3,
-        brand: "Honda",
-        productionDate: "1992-07-08",
-        plateNumber: "PBM4180"
+        brand: "BMW",
+        productionDate: "2017-10-22",
+        plateNumber: "CQN0937",
+        rating: "9"
         },
 
         { 
         id: 4,
-        brand: "Audi",
-        productionDate: "2005-11-03",
-        plateNumber: "EHS5409"
+        brand: "Toyota",
+        productionDate: "1998-10-07",
+        plateNumber: "QHL6045",
+        rating: "4"
         },
 
         { 
         id: 5,
-        brand: "BMW",
-        productionDate: "1992-05-29",
-        plateNumber: "TSN4947"
+        brand: "Audi",
+        productionDate: "2007-05-04",
+        plateNumber: "OOX7473",
+        rating: "4"
         },
 
         { 
         id: 6,
-        brand: "Audi",
-        productionDate: "1995-01-11",
-        plateNumber: "RUA7488"
+        brand: "Mitsubishi",
+        productionDate: "2002-11-09",
+        plateNumber: "OAQ9811",
+        rating: "9"
         },
 
         { 
         id: 7,
-        brand: "Honda",
-        productionDate: "1998-03-18",
-        plateNumber: "SNR2489"
+        brand: "Mitsubishi",
+        productionDate: "2001-05-09",
+        plateNumber: "YKV6870",
+        rating: "1"
         },
 
         { 
         id: 8,
-        brand: "Mitsubishi",
-        productionDate: "2001-05-15",
-        plateNumber: "ZXN1550"
+        brand: "Audi",
+        productionDate: "1993-03-06",
+        plateNumber: "QUJ6255",
+        rating: "1"
         },
 
         { 
         id: 9,
-        brand: "Honda",
-        productionDate: "2011-03-04",
-        plateNumber: "CYM1498"
+        brand: "Audi",
+        productionDate: "2007-05-03",
+        plateNumber: "IAX2049",
+        rating: "0"
         },
 
         { 
         id: 10,
-        brand: "Honda",
-        productionDate: "2018-03-09",
-        plateNumber: "XHF9315"
+        brand: "Audi",
+        productionDate: "2010-11-15",
+        plateNumber: "FJT2180",
+        rating: "10"
         },
 
         { 
         id: 11,
-        brand: "BMW",
-        productionDate: "2000-12-26",
-        plateNumber: "ACZ0032"
+        brand: "Mercedes",
+        productionDate: "1993-11-11",
+        plateNumber: "WJE5195",
+        rating: "6"
         },
 
         { 
         id: 12,
-        brand: "BMW",
-        productionDate: "2014-05-11",
-        plateNumber: "QKF2420"
+        brand: "Honda",
+        productionDate: "1999-04-09",
+        plateNumber: "PWZ5529",
+        rating: "7"
         },
 
         { 
         id: 13,
         brand: "Toyota",
-        productionDate: "2021-01-02",
-        plateNumber: "PIJ6749"
+        productionDate: "2005-05-31",
+        plateNumber: "ZDR6141",
+        rating: "1"
         },
 
         { 
         id: 14,
-        brand: "BMW",
-        productionDate: "2000-11-26",
-        plateNumber: "TSK4887"
+        brand: "Honda",
+        productionDate: "1990-02-08",
+        plateNumber: "YDU0807",
+        rating: "2"
         },
 
         { 
         id: 15,
-        brand: "Mitsubishi",
-        productionDate: "2012-04-18",
-        plateNumber: "UKV9386"
+        brand: "BMW",
+        productionDate: "2008-09-01",
+        plateNumber: "IUA7448",
+        rating: "2"
         }
 ];

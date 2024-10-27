@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Home from '../pages/Home';
 import Lab1 from '../pages/Lab1';
 import Lab2 from '../pages/Lab2';
+import Lab3 from '../pages/Lab3';
 
 const menuItems = [
     {
@@ -28,6 +29,13 @@ const menuItems = [
       urlPattern: "/lab2/:id", 
       element: <Lab2/>,
     },
+    {
+      id: 4,
+      label: "Laboratorium 3",
+      url: "/lab3",
+      urlPattern: "/lab3",
+      element: <Lab3/>,
+    }
   ];
 
 const RootLayout = ({ children }) => {
@@ -43,6 +51,7 @@ const RootLayout = ({ children }) => {
 };
 RootLayout.propTypes = {
   children: PropTypes.node.isRequired, 
+  
 };
 
 export default RootLayout;
