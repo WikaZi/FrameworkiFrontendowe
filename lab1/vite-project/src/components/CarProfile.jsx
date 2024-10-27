@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import RatingBar from './RatingBar';
 
 const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
     const [rating, setRating] = useState(car.rating || 0);
@@ -22,6 +23,7 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
             <p><strong>Production Date:</strong> {car.productionDate}</p>
             <p><strong>Plate Number:</strong> {car.plateNumber}</p>
             <p><strong>Rating:</strong> {car.rating}</p>
+            <RatingBar rate={rating} /> 
 
             <div className="buttons mt-3">
                 <button onClick={() => onEdit(car.id)} className="btn btn-primary me-2">Edit</button>

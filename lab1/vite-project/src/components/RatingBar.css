@@ -1,0 +1,13 @@
+.rating-bar {
+    display: flex;
+    font-size: 24px; 
+    color: #ccc; 
+}
+
+.star {
+    margin-right: 4px; 
+}
+
+.star.filled {
+    color: #ffcc00; 
+}
