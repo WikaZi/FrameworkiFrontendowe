@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import './RatingBar.css'; 
+import '../styles/RatingBar.css'; 
 
 const RatingBar = ({ rate }) => {
     const totalStars = 10; 
