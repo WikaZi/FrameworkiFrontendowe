@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import RatingBar from './RatingBar';
+import EditCarForm from './EditCarForm';
 
 const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
     const [rating, setRating] = useState(car.rating || 0);
+    const [isEditing, setIsEditing] = useState(false);
     
     const handleRate = () => {
         if (rating === 10) {
@@ -12,8 +14,24 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
             setRating((prevRating) => Math.min(prevRating + 1, 10)); 
         }
         onRate(car.id, rating);
-    
-    }; 
+    };
+    const handleEdit = (updatedCar) => { 
+        onEdit(car.id, updatedCar);
+        setIsEditing(false);
+    };
+    const handleDelete = () => {
+        onDelete(car.id);
+    };
+    if (isEditing) {
+        return (
+            <EditCarForm
+                car={car}
+                onSave={handleEdit}
+                onCancel={() => setIsEditing(false)}
+            />
+        );
+    }
+
     return (
         
         <div className="car-profile">
@@ -24,22 +42,9 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
             <p><strong>Plate Number:</strong> {car.plateNumber}</p>
             <p><strong>Rating:</strong> {car.rating}</p>
             <RatingBar rate={rating} /> 
-
-            <div className="buttons mt-3">
-                <button onClick={() => onEdit(car.id)} className="btn btn-primary me-2">Edit</button>
-                <button onClick={() => onDelete(car.id)} className="btn btn-danger me-2">Delete</button>
-                <div>
-                <input 
-                        type="number" 
-                        value={rating} 
-                        onChange={(e) => setRating(e.target.value)} 
-                        min="0" 
-                        max="10" 
-                        className="me-2"
-                    />
-                <button onClick={handleRate} className="btn btn-success">Rate</button>
-                </div>
-            </div>
+            <button onClick={handleRate} className="btn btn-success">Rate</button>
+            <buton onClick={() => setIsEditing(true)} className="btn btn-primary me-2">Edit</buton>
+            <button onClick={handleDelete} className='btn btn-danger me-2'>Delete</button>
         </div>
     );
 };
