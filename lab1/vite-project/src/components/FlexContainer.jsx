@@ -7,13 +7,15 @@ const FlexContainer = ({ element: Element, data}) => {
     const [cars, dispatch] = useReducer(AppReducer, data);
   return (
     <div className="d-flex flex-wrap gap-3 justify-content-start">
-    {cars.map((item) => (
-      <div key={item.id} className="flex-item p-3">
-        <Element car={item} onEdit={() => dispatch({ type: "edit", payload: { id: item.id } })} />
-                    <button className="btn btn-danger me-2" onClick={() => dispatch({ type: "delete", payload: { id: item.id } })}>Delete</button>
-                    <button className='btn btn-success' onClick={() => dispatch({ type: "rate", payload: { id: item.id, rating: (item.rating + 1) % 11 } })}>Rate</button>
-      </div>
-    ))}
+    {cars.map(car => (
+                <Element 
+                key={car.id} 
+                car={car} 
+                onRate={(id, rating) => dispatch({ type: "rate", payload: { id, rating } })} 
+                onEdit={(id, updatedData) => dispatch({ type: "edit", payload: {id, updatedData } })}
+                onDelete={(id) => dispatch({ type: "delete", payload: { id } })}
+                />
+            ))}
   </div>
   );
 };

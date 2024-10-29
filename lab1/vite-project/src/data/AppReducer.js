@@ -4,7 +4,7 @@ export default function AppReducer(state, action) {
         case "edit":
             
             return state.map(car => 
-                car.id === action.payload.id ? { ...car, ...action.payload.data } : car
+                car.id === action.payload.id ? { ...car, ...action.payload.updatedData } : car
             );
         case "rate":
             
