@@ -13,7 +13,7 @@ const FlexContainer = ({ element: Element, data}) => {
                 car={car} 
                 onRate={(id, rating) => dispatch({ type: "rate", payload: { id, rating } })} 
                 onEdit={(id, updatedData) => dispatch({ type: "edit", payload: {id, updatedData } })}
-                onDelete={(id) => dispatch({ type: "delete", payload: { id } })}
+                onDelete={(id,) => dispatch({ type: "delete", payload: { id } })}
                 />
             ))}
   </div>

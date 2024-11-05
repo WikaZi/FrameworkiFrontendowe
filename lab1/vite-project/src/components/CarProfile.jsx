@@ -19,9 +19,7 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
         onEdit(car.id, updatedCar);
         setIsEditing(false);
     };
-    const handleDelete = () => {
-        onDelete(car.id);
-    };
+    
     if (isEditing) {
         return (
             <EditCarForm
@@ -44,7 +42,7 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
             <RatingBar rate={rating} /> 
             <button onClick={handleRate} className="btn btn-success">Rate</button>
             <buton onClick={() => setIsEditing(true)} className="btn btn-primary me-2">Edit</buton>
-            <button onClick={handleDelete} className='btn btn-danger me-2'>Delete</button>
+            <button onClick={() => onDelete(car.id)} className='btn btn-danger me-2'>Delete</button>
         </div>
     );
 };
