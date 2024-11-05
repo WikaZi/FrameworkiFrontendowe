@@ -26,7 +26,7 @@ const AddCarForm = () => {
             <div className="mb-3">
                 <label htmlFor="brand" className="form-label">Brand:</label>
                 <input
-                    type="text"
+                    type="text" maxLength={15} minLength={2}
                     id="brand"
                     name="brand"
                     className="form-control"
@@ -38,7 +38,7 @@ const AddCarForm = () => {
             <div className="mb-3">
                 <label htmlFor="productionDate" className="form-label">Production Date:</label>
                 <input
-                    type="text"
+                    type="date"
                     id="productionDate"
                     name="productionDate"
                     className="form-control"
@@ -50,7 +50,7 @@ const AddCarForm = () => {
             <div className="mb-3">
                 <label htmlFor="plateNumber" className="form-label">Plate Number:</label>
                 <input
-                    type="text"
+                    type="text" maxLength={7} minLength={7}
                     id="plateNumber"
                     name="plateNumber"
                     className="form-control"
