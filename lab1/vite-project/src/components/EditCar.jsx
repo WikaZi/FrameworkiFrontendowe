@@ -24,7 +24,7 @@ const EditCarForm = ({ car, onSave, onCancel }) => {
             <div className="mb-3">
                 <label className="form-label">Brand</label>
                 <input
-                    type="text"
+                    type="text" minLength={2}
                     className="form-control"
                     value={brand}
                     onChange={(e) => setBrand(e.target.value)}
