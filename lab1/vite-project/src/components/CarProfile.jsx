@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useContext, useState } from 'react';
 import RatingBar from './RatingBar';
-import EditCarForm from './EditCarForm';
+import EditCarForm from './EditCar';
 import AppContext from '../data/AppContext';
 
 const CarProfile = ({ car}) => {

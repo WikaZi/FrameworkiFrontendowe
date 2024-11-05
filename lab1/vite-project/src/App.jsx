@@ -10,7 +10,8 @@ import Lab4 from './pages/Lab4';
 import AppReducer from './data/AppReducer';
 import data from './data/module-data';
 import AppContext from './data/AppContext';
-
+import AddCarForm from './components/AddCarForm';
+import EditCarForm from './components/EditCar';
   
 
   function App() {
@@ -27,6 +28,8 @@ import AppContext from './data/AppContext';
               <Route path="/lab2/:id" element={<Lab2 />} />
               <Route path="/lab3" element={<Lab3 />} />
               <Route path="/lab4" element={<Lab4/>} />
+              <Route path="/lab4/add" element={<AddCarForm/>} />
+              <Route path="/lab4/edit" element={<EditCarForm/>} />
             </Routes>
             </RootLayout>
         </div>
