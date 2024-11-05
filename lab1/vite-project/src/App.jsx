@@ -11,7 +11,7 @@ import AppReducer from './data/AppReducer';
 import data from './data/module-data';
 import AppContext from './data/AppContext';
 import AddCarForm from './components/AddCarForm';
-import EditCarForm from './components/EditCar';
+import EditCarForm from './components/EditCarForm';
   
 
   function App() {
@@ -29,7 +29,7 @@ import EditCarForm from './components/EditCar';
               <Route path="/lab3" element={<Lab3 />} />
               <Route path="/lab4" element={<Lab4/>} />
               <Route path="/lab4/add" element={<AddCarForm/>} />
-              <Route path="/lab4/edit" element={<EditCarForm/>} />
+              <Route path="/lab4/edit/:id" element={<EditCarForm/>} />
             </Routes>
             </RootLayout>
         </div>
