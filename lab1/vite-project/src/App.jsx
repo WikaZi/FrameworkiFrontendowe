@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useReducer } from 'react';
 import RootLayout from './layouts/RootLayout';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -6,11 +7,17 @@ import Lab1 from './pages/Lab1';
 import Lab2 from './pages/Lab2';
 import Lab3 from './pages/Lab3';
 import Lab4 from './pages/Lab4';
+import AppReducer from './data/AppReducer';
+import data from './data/module-data';
+import AppContext from './data/AppContext';
 
   
 
   function App() {
+    const [state, appDispatch] = useReducer(AppReducer, data);
+
     return (
+    <AppContext.Provider value={{ items: state, dispatch: appDispatch }}>
       <BrowserRouter>
         <div>
           <RootLayout>
@@ -24,6 +31,7 @@ import Lab4 from './pages/Lab4';
             </RootLayout>
         </div>
       </BrowserRouter>
+    </AppContext.Provider>
     );
   }
   

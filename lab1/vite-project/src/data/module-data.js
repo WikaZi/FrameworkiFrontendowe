@@ -3,120 +3,122 @@ export const data = [
         { 
         id: 1,
         brand: "BMW",
-        productionDate: "1997-11-30",
-        plateNumber: "QDI8911",
+        productionDate: "2010-07-23",
+        plateNumber: "TZM2736",
         rating: "8"
         },
 
         { 
         id: 2,
-        brand: "Audi",
-        productionDate: "2017-08-18",
-        plateNumber: "VMO3520",
-        rating: "2"
+        brand: "BMW",
+        productionDate: "1997-10-05",
+        plateNumber: "NUL2605",
+        rating: "7"
         },
 
         { 
         id: 3,
-        brand: "Mitsubishi",
-        productionDate: "2023-12-04",
-        plateNumber: "ZOO0415",
-        rating: "9"
+        brand: "BMW",
+        productionDate: "2012-03-09",
+        plateNumber: "ISU9670",
+        rating: "5"
         },
 
         { 
         id: 4,
-        brand: "Mercedes",
-        productionDate: "1990-06-12",
-        plateNumber: "VDW8658",
-        rating: "5"
-        },
-
-        { 
-        id: 5,
-        brand: "Mercedes",
-        productionDate: "2005-09-27",
-        plateNumber: "OZG9062",
-        rating: "3"
-        },
-
-        { 
-        id: 6,
-        brand: "Honda",
-        productionDate: "1992-08-03",
-        plateNumber: "EOH4725",
-        rating: "5"
-        },
-
-        { 
-        id: 7,
-        brand: "BMW",
-        productionDate: "2003-05-17",
-        plateNumber: "KFW0318",
-        rating: "1"
-        },
-
-        { 
-        id: 8,
-        brand: "Audi",
-        productionDate: "2008-05-18",
-        plateNumber: "SAO8650",
+        brand: "Toyota",
+        productionDate: "1992-11-30",
+        plateNumber: "WWW1068",
         rating: "10"
         },
 
         { 
-        id: 9,
+        id: 5,
         brand: "Mitsubishi",
-        productionDate: "1996-10-07",
-        plateNumber: "TPQ7040",
+        productionDate: "2004-11-08",
+        plateNumber: "WVT1000",
+        rating: "4"
+        },
+
+        { 
+        id: 6,
+        brand: "Mitsubishi",
+        productionDate: "2005-01-17",
+        plateNumber: "SWA5378",
+        rating: "0"
+        },
+
+        { 
+        id: 7,
+        brand: "Audi",
+        productionDate: "2010-12-02",
+        plateNumber: "QYJ7919",
         rating: "3"
+        },
+
+        { 
+        id: 8,
+        brand: "Mitsubishi",
+        productionDate: "1993-09-21",
+        plateNumber: "QLC5545",
+        rating: "1"
+        },
+
+        { 
+        id: 9,
+        brand: "Toyota",
+        productionDate: "2011-10-14",
+        plateNumber: "IEQ6782",
+        rating: "6"
         },
 
         { 
         id: 10,
         brand: "Honda",
-        productionDate: "1990-12-01",
-        plateNumber: "JBL8695",
-        rating: "8"
+        productionDate: "2006-09-15",
+        plateNumber: "XIZ3619",
+        rating: "2"
         },
 
         { 
         id: 11,
-        brand: "Mercedes",
-        productionDate: "2020-08-24",
-        plateNumber: "QNN6866",
-        rating: "7"
+        brand: "Toyota",
+        productionDate: "2018-05-28",
+        plateNumber: "PUB6789",
+        rating: "5"
         },
 
         { 
         id: 12,
-        brand: "Audi",
-        productionDate: "2004-11-11",
-        plateNumber: "FMM4220",
-        rating: "1"
+        brand: "Honda",
+        productionDate: "2000-05-16",
+        plateNumber: "MKL4752",
+        rating: "9"
         },
 
         { 
         id: 13,
         brand: "Honda",
-        productionDate: "1994-11-27",
-        plateNumber: "ROP6705",
+        productionDate: "2014-03-10",
+        plateNumber: "PFA7450",
         rating: "3"
         },
 
         { 
         id: 14,
-        brand: "BMW",
-        productionDate: "1991-10-29",
-        plateNumber: "UPW3980",
-        rating: "5"
+        brand: "Mercedes",
+        productionDate: "2006-07-08",
+        plateNumber: "VBP9929",
+        rating: "10"
         },
 
         { 
         id: 15,
-        brand: "BMW",
-        productionDate: "1997-08-26",
-        plateNumber: "XJI9117",
-        rating: "5"
+        brand: "Audi",
+        productionDate: "1992-02-01",
+        plateNumber: "QAJ9431",
+        rating: "10"
         }
 ];
+
+export default data;

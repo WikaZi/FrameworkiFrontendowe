@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
-import AppReducer from '../data/AppReducer';
-import { useReducer } from 'react';
+import { useContext } from 'react';
+import AppContext from '../data/AppContext';
 
-const FlexContainer = ({ element: Element, data}) => {
-    const [cars, dispatch] = useReducer(AppReducer, data);
+const FlexContainer = ({ element: Element}) => {
+    const {items, dispatch} = useContext(AppContext);
   return (
     <div className="d-flex flex-wrap gap-3 justify-content-start">
-    {cars.map(car => (
+    {items.map(car => (
                 <Element 
                 key={car.id} 
                 car={car} 
@@ -21,11 +21,7 @@ const FlexContainer = ({ element: Element, data}) => {
 };
 
 FlexContainer.propTypes = {
-    element: PropTypes.elementType.isRequired, 
-    data: PropTypes.arrayOf(PropTypes.object).isRequired, 
-    onEdit: PropTypes.func.isRequired,
-    onDelete: PropTypes.func.isRequired,
-    onRate: PropTypes.func.isRequired,
+    element: PropTypes.elementType.isRequired
 }
 
 export default FlexContainer;

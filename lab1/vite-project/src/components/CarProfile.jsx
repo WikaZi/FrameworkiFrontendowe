@@ -1,22 +1,26 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import RatingBar from './RatingBar';
 import EditCarForm from './EditCarForm';
+import AppContext from '../data/AppContext';
 
-const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
+const CarProfile = ({ car}) => {
+    
+    const {dispatch} = useContext(AppContext);
     const [rating, setRating] = useState(car.rating || 0);
     const [isEditing, setIsEditing] = useState(false);
     
     const handleRate = () => {
-        if (rating === 10) {
-            setRating(0); 
-        } else {
-            setRating((prevRating) => Math.min(prevRating + 1, 10)); 
-        }
-        onRate(car.id, rating);
+        const newRating = (rating === 10) ? 0 : Math.min(rating + 1, 10);
+        setRating(newRating);
+        dispatch({ type: "rate", payload: { id: car.id, rating: newRating } });
+       
     };
     const handleEdit = (updatedCar) => { 
-        onEdit(car.id, updatedCar);
+        dispatch({
+            type: "edit",
+            payload: { id: car.id, updatedData: updatedCar }
+        });
         setIsEditing(false);
     };
     
@@ -42,7 +46,7 @@ const CarProfile = ({ car, onEdit, onDelete, onRate  }) => {
             <RatingBar rate={rating} /> 
             <button onClick={handleRate} className="btn btn-success">Rate</button>
             <buton onClick={() => setIsEditing(true)} className="btn btn-primary me-2">Edit</buton>
-            <button onClick={() => onDelete(car.id)} className='btn btn-danger me-2'>Delete</button>
+            <button onClick={() => dispatch({ type: "delete", payload: { id: car.id } })} className='btn btn-danger me-2'>Delete</button>
         </div>
     );
 };
