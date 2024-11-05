@@ -1,3 +1,4 @@
+import AddCarForm from '../components/AddCarForm';
 import Home from '../pages/Home';
 import Lab1 from '../pages/Lab1';
 import Lab2 from '../pages/Lab2';
@@ -39,7 +40,15 @@ const menuItems = [
       url: "/lab4",
       urlPattern: "/lab4",
       element: <Lab4/>
-    }
+    },
+    {
+      id: 6,
+      label: "Dodaj samochód",
+      url: "/lab4/add",
+      urlPattern: "/lab4/add",
+      element: <AddCarForm/>
+    },
+    
   ];
   
   export default menuItems;
