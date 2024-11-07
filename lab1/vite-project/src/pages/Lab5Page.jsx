@@ -1,15 +1,15 @@
 import  { useState } from 'react';
-import useFetch from '../data/useFetch';  // Importujemy hook useFetch
+import useFetch from '../data/useFetch';  
 import { Link } from 'react-router-dom';
-import TableHeader from '../components/TableHeader';  // Komponent TableHeader
+import TableHeader from '../components/TableHeader';  
 
 const Lab5Page = () => {
-    // Pobieramy dane za pomocą hooka useFetch
+    
     const [posts] = useFetch("https://jsonplaceholder.typicode.com/posts");
     const [users] = useFetch("https://jsonplaceholder.typicode.com/users");
     const [comments] = useFetch("https://jsonplaceholder.typicode.com/comments");
 
-    // Przetwarzamy dane do jednej tabeli
+    
     const tableData = posts.map((p) => {
         return {
             user: users.find((u) => u.id === p.userId),
@@ -18,44 +18,44 @@ const Lab5Page = () => {
         };
     });
 
-    // Stan do przechowywania posortowanych danych
+    
     const [sortedPosts, setSortedPosts] = useState(tableData);
 
-    // Funkcja sortująca dane po tytule posta
+    
     const sortPostsByTitle = (order) => {
         let sorted = [...tableData];
         if (order === 'asc') {
-            sorted.sort((a, b) => a.post.title.localeCompare(b.post.title)); // Sortowanie rosnąco po tytule
+            sorted.sort((a, b) => a.post.title.localeCompare(b.post.title)); 
         } else if (order === 'desc') {
-            sorted.sort((a, b) => b.post.title.localeCompare(a.post.title)); // Sortowanie malejąco po tytule
+            sorted.sort((a, b) => b.post.title.localeCompare(a.post.title)); 
         } else {
-            sorted = tableData; // Przywracamy naturalną kolejność
+            sorted = tableData; 
         }
         setSortedPosts(sorted);
     };
 
-    // Funkcja sortująca dane po użytkowniku
+    
     const sortPostsByUser = (order) => {
         let sorted = [...tableData];
         if (order === 'asc') {
-            sorted.sort((a, b) => a.user.name.localeCompare(b.user.name)); // Sortowanie rosnąco po nazwie użytkownika
+            sorted.sort((a, b) => a.user.name.localeCompare(b.user.name)); 
         } else if (order === 'desc') {
-            sorted.sort((a, b) => b.user.name.localeCompare(a.user.name)); // Sortowanie malejąco po nazwie użytkownika
+            sorted.sort((a, b) => b.user.name.localeCompare(a.user.name)); 
         } else {
-            sorted = tableData; // Przywracamy naturalną kolejność
+            sorted = tableData; 
         }
         setSortedPosts(sorted);
     };
 
-    // Funkcja sortująca dane po liczbie komentarzy
+    
     const sortPostsByComments = (order) => {
         let sorted = [...tableData];
         if (order === 'asc') {
-            sorted.sort((a, b) => a.comments.length - b.comments.length); // Sortowanie rosnąco po liczbie komentarzy
+            sorted.sort((a, b) => a.comments.length - b.comments.length); 
         } else if (order === 'desc') {
-            sorted.sort((a, b) => b.comments.length - a.comments.length); // Sortowanie malejąco po liczbie komentarzy
+            sorted.sort((a, b) => b.comments.length - a.comments.length); 
         } else {
-            sorted = tableData; // Przywracamy naturalną kolejność
+            sorted = tableData; 
         }
         setSortedPosts(sorted);
     };
