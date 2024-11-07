@@ -14,6 +14,8 @@ import AddCarForm from './components/AddCarForm';
 import EditCarForm from './components/EditCarForm';
 import AppProvider from './components/AppProvider';
 import Lab5Page from './pages/Lab5Page';
+import UserDetails from './components/UserDetails';
+import PostComments from './components/PostComments';
   
 
   function App() {
@@ -32,6 +34,8 @@ import Lab5Page from './pages/Lab5Page';
               <Route path="/lab4/add" element={<AddCarForm/>} />
               <Route path="/lab4/edit/:id" element={<EditCarForm/>} />
               <Route path="/lab5" element={<Lab5Page />} />
+              <Route path="/lab5/users/:id" element={<UserDetails />} />
+              <Route path="/lab5/posts/:id/comments" element={<PostComments />} />
             </Routes>
             </RootLayout>
       </BrowserRouter>
