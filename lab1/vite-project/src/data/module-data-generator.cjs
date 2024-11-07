@@ -57,7 +57,7 @@ fs.readFile('./src/cars.txt', 'utf8', (err, data) => {
     
     }
     
-    content = content.trim().slice(0, -1) + "\n];";
+    content = content.trim().slice(0, -1) + "\n];\n\nexport default data;"; // Add default export
     
     fs.writeFile('./src/data/module-data.js', content, (err) => {
         if (err) {

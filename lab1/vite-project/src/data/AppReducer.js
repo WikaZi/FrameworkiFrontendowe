@@ -1,8 +1,9 @@
 
 export default function AppReducer(state, action) {
     switch (action.type) {
-        case 'add':
-            return { ...state, items: [...state.items, action.payload] };
+        case "add":
+            
+            return [...state, action.payload];
         case "edit":
             
             return state.map(car => 
