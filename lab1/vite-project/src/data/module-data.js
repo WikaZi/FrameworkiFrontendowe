@@ -2,122 +2,122 @@ export const data = [
 
         { 
         id: 1,
-        brand: "BMW",
-        productionDate: "2005-10-09",
-        plateNumber: "OWZ5510",
-        rating: "7"
+        brand: "Mercedes",
+        productionDate: "2012-11-06",
+        plateNumber: "GJR8202",
+        rating: "3"
         },
 
         { 
         id: 2,
-        brand: "Honda",
-        productionDate: "2015-07-09",
-        plateNumber: "MPC7720",
-        rating: "8"
+        brand: "Mitsubishi",
+        productionDate: "2004-04-16",
+        plateNumber: "EZL5294",
+        rating: "9"
         },
 
         { 
         id: 3,
-        brand: "Mercedes",
-        productionDate: "2011-07-26",
-        plateNumber: "JMC4989",
-        rating: "0"
+        brand: "BMW",
+        productionDate: "1991-04-29",
+        plateNumber: "SGE6845",
+        rating: "6"
         },
 
         { 
         id: 4,
-        brand: "Audi",
-        productionDate: "1991-04-12",
-        plateNumber: "WSK6894",
-        rating: "2"
+        brand: "Mitsubishi",
+        productionDate: "2021-03-28",
+        plateNumber: "LCM2043",
+        rating: "10"
         },
 
         { 
         id: 5,
-        brand: "Toyota",
-        productionDate: "2009-05-20",
-        plateNumber: "VWE9182",
-        rating: "4"
+        brand: "BMW",
+        productionDate: "1991-12-27",
+        plateNumber: "BJV1030",
+        rating: "2"
         },
 
         { 
         id: 6,
-        brand: "Mercedes",
-        productionDate: "2010-05-19",
-        plateNumber: "RRZ0170",
-        rating: "8"
+        brand: "Mitsubishi",
+        productionDate: "1990-04-11",
+        plateNumber: "MBF5352",
+        rating: "5"
         },
 
         { 
         id: 7,
-        brand: "Toyota",
-        productionDate: "1998-04-15",
-        plateNumber: "ZFA3969",
-        rating: "7"
+        brand: "Honda",
+        productionDate: "1998-03-14",
+        plateNumber: "YAK5717",
+        rating: "10"
         },
 
         { 
         id: 8,
-        brand: "Mitsubishi",
-        productionDate: "2002-08-17",
-        plateNumber: "YKI4363",
-        rating: "5"
+        brand: "Toyota",
+        productionDate: "1997-06-12",
+        plateNumber: "PCG2429",
+        rating: "7"
         },
 
         { 
         id: 9,
         brand: "Audi",
-        productionDate: "1990-07-05",
-        plateNumber: "YVC6456",
-        rating: "1"
+        productionDate: "2021-01-19",
+        plateNumber: "ZTC2274",
+        rating: "6"
         },
 
         { 
         id: 10,
-        brand: "Toyota",
-        productionDate: "2019-01-20",
-        plateNumber: "SQR3545",
-        rating: "2"
-        },
-
-        { 
-        id: 11,
-        brand: "Mitsubishi",
-        productionDate: "2001-06-04",
-        plateNumber: "XDD1239",
-        rating: "3"
-        },
-
-        { 
-        id: 12,
         brand: "Honda",
-        productionDate: "1994-08-06",
-        plateNumber: "NHM8049",
-        rating: "1"
-        },
-
-        { 
-        id: 13,
-        brand: "BMW",
-        productionDate: "2002-05-20",
-        plateNumber: "ICV0147",
-        rating: "5"
-        },
-
-        { 
-        id: 14,
-        brand: "Mercedes",
-        productionDate: "1999-05-25",
-        plateNumber: "ABQ6691",
+        productionDate: "2021-12-28",
+        plateNumber: "ZUF2324",
         rating: "8"
         },
 
         { 
-        id: 15,
-        brand: "Toyota",
-        productionDate: "1993-04-24",
-        plateNumber: "RKJ0494",
+        id: 11,
+        brand: "Mercedes",
+        productionDate: "2019-08-13",
+        plateNumber: "APS0202",
+        rating: "6"
+        },
+
+        { 
+        id: 12,
+        brand: "BMW",
+        productionDate: "2003-05-09",
+        plateNumber: "CUM0464",
+        rating: "4"
+        },
+
+        { 
+        id: 13,
+        brand: "Honda",
+        productionDate: "1994-02-24",
+        plateNumber: "QTC4698",
         rating: "9"
+        },
+
+        { 
+        id: 14,
+        brand: "Toyota",
+        productionDate: "2015-05-26",
+        plateNumber: "COD1942",
+        rating: "9"
+        },
+
+        { 
+        id: 15,
+        brand: "Mercedes",
+        productionDate: "2016-06-06",
+        plateNumber: "GRH2719",
+        rating: "10"
         }
 ];
 
