@@ -12,15 +12,15 @@ import data from './data/module-data';
 import AppContext from './data/AppContext';
 import AddCarForm from './components/AddCarForm';
 import EditCarForm from './components/EditCarForm';
+import AppProvider from './components/AppProvider';
   
 
   function App() {
-    const [state, appDispatch] = useReducer(AppReducer, data);
+    
 
     return (
-    <AppContext.Provider value={{ items: state, dispatch: appDispatch }}>
-      <BrowserRouter>
-        <div>
+    <AppProvider>
+      <BrowserRouter> 
           <RootLayout>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -32,9 +32,8 @@ import EditCarForm from './components/EditCarForm';
               <Route path="/lab4/edit/:id" element={<EditCarForm/>} />
             </Routes>
             </RootLayout>
-        </div>
       </BrowserRouter>
-    </AppContext.Provider>
+    </AppProvider>
     );
   }
   
