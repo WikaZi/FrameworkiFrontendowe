@@ -1,4 +1,4 @@
-import { Dropdown } from 'react-bootstrap'; // Importujemy komponent Dropdown
+import { Dropdown } from 'react-bootstrap'; 
 
 const TableHeader = ({ onSortUser, onSortTitle, onSortComments }) => {
     return (

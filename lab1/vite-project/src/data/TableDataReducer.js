@@ -1,12 +1,15 @@
 const TableDataReducer = (state, action) => {
     switch (action.type) {
+        case 'INITIALIZE':
+            return action.payload;
+
         case 'SORT_BY_USER':
             if (action.order === 'asc') {
                 return [...state].sort((a, b) => a.user.name.localeCompare(b.user.name));
             } else if (action.order === 'desc') {
                 return [...state].sort((a, b) => b.user.name.localeCompare(a.user.name));
             }
-            return action.initialData; 
+            return action.initialData;
 
         case 'SORT_BY_TITLE':
             if (action.order === 'asc') {
@@ -14,7 +17,7 @@ const TableDataReducer = (state, action) => {
             } else if (action.order === 'desc') {
                 return [...state].sort((a, b) => b.post.title.localeCompare(a.post.title));
             }
-            return action.initialData; 
+            return action.initialData;
 
         case 'SORT_BY_COMMENTS':
             if (action.order === 'asc') {
@@ -22,7 +25,7 @@ const TableDataReducer = (state, action) => {
             } else if (action.order === 'desc') {
                 return [...state].sort((a, b) => b.comments.length - a.comments.length);
             }
-            return action.initialData; 
+            return action.initialData;
 
         default:
             return state;
