@@ -3,9 +3,10 @@ import { useContext, useState } from 'react';
 import RatingBar from './RatingBar';
 import EditCarForm from './EditCar';
 import AppContext from '../data/AppContext';
+import { useNavigate } from 'react-router-dom';
 
 const CarProfile = ({ car}) => {
-    
+    const navigate = useNavigate();
     const {dispatch} = useContext(AppContext);
     const [rating, setRating] = useState(car.rating || 0);
     const [isEditing, setIsEditing] = useState(false);
@@ -16,12 +17,8 @@ const CarProfile = ({ car}) => {
         dispatch({ type: "rate", payload: { id: car.id, rating: newRating } });
        
     };
-    const handleEdit = (updatedCar) => { 
-        dispatch({
-            type: "edit",
-            payload: { id: car.id, updatedData: updatedCar }
-        });
-        setIsEditing(false);
+    const handleEdit = () => { 
+        navigate(`/lab4/edit/${car.id}`);
     };
     
     if (isEditing) {
@@ -45,7 +42,7 @@ const CarProfile = ({ car}) => {
             <p><strong>Rating:</strong> {car.rating}</p>
             <RatingBar rate={rating} /> 
             <button onClick={handleRate} className="btn btn-success">Rate</button>
-            <buton onClick={() => setIsEditing(true)} className="btn btn-primary me-2">Edit</buton>
+            <button onClick={handleEdit}  className="btn btn-primary me-2">Edit</button>
             <button onClick={() => dispatch({ type: "delete", payload: { id: car.id } })} className='btn btn-danger me-2'>Delete</button>
         </div>
     );
