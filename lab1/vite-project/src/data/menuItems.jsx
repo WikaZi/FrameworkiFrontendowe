@@ -4,6 +4,7 @@ import Lab1 from '../pages/Lab1';
 import Lab2 from '../pages/Lab2';
 import Lab3 from '../pages/Lab3';
 import Lab4 from '../pages/Lab4';
+import Lab5Page from '../pages/Lab5Page';
 
 const menuItems = [
     {
@@ -48,6 +49,13 @@ const menuItems = [
       urlPattern: "/lab4/add",
       element: <AddCarForm/>
     },
+    {
+      id: 7,
+      label: "Laboratorium 5",
+      url: "/lab5",
+      urlPattern: "/lab5",
+      element: <Lab5Page/>
+    }
     
   ];
   

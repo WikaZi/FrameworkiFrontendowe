@@ -13,6 +13,7 @@ import Lab4 from './pages/Lab4';
 import AddCarForm from './components/AddCarForm';
 import EditCarForm from './components/EditCarForm';
 import AppProvider from './components/AppProvider';
+import Lab5Page from './pages/Lab5Page';
   
 
   function App() {
@@ -30,6 +31,7 @@ import AppProvider from './components/AppProvider';
               <Route path="/lab4" element={<Lab4/>} />
               <Route path="/lab4/add" element={<AddCarForm/>} />
               <Route path="/lab4/edit/:id" element={<EditCarForm/>} />
+              <Route path="/lab5" element={<Lab5Page />} />
             </Routes>
             </RootLayout>
       </BrowserRouter>
