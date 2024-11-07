@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import RatingBar from './RatingBar';
 import EditCarForm from './EditCar';
-import AppContext from '../data/AppContext';
+//import AppContext from '../data/AppContext';
 import { useNavigate } from 'react-router-dom';
+import useDispatch from '../data/useDispatch';
 
 const CarProfile = ({ car}) => {
     const navigate = useNavigate();
-    const {dispatch} = useContext(AppContext);
+    const dispatch = useDispatch();
     const [rating, setRating] = useState(car.rating || 0);
     const [isEditing, setIsEditing] = useState(false);
     

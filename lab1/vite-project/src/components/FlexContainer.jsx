@@ -1,10 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
-import { useContext } from 'react';
-import AppContext from '../data/AppContext';
+//import { useContext } from 'react';
+//import AppContext from '../data/AppContext';
+import useData from '../data/useData';
+import useDispatch from '../data/useDispatch';
 
 const FlexContainer = ({ element: Element}) => {
-    const {items, dispatch} = useContext(AppContext);
+  const items = useData();  
+  const dispatch = useDispatch();
+
   return (
     <div className="d-flex flex-wrap gap-3 justify-content-start">
     {items.map(car => (

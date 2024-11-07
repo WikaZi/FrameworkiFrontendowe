@@ -2,122 +2,122 @@ export const data = [
 
         { 
         id: 1,
-        brand: "Mitsubishi",
-        productionDate: "1996-04-06",
-        plateNumber: "OXF5568",
-        rating: "2"
+        brand: "BMW",
+        productionDate: "2005-10-09",
+        plateNumber: "OWZ5510",
+        rating: "7"
         },
 
         { 
         id: 2,
-        brand: "Mitsubishi",
-        productionDate: "1990-07-23",
-        plateNumber: "YLC5118",
-        rating: "2"
+        brand: "Honda",
+        productionDate: "2015-07-09",
+        plateNumber: "MPC7720",
+        rating: "8"
         },
 
         { 
         id: 3,
-        brand: "Mitsubishi",
-        productionDate: "2000-08-22",
-        plateNumber: "CPY8635",
-        rating: "2"
+        brand: "Mercedes",
+        productionDate: "2011-07-26",
+        plateNumber: "JMC4989",
+        rating: "0"
         },
 
         { 
         id: 4,
-        brand: "Mitsubishi",
-        productionDate: "2005-06-09",
-        plateNumber: "TUR2771",
-        rating: "8"
+        brand: "Audi",
+        productionDate: "1991-04-12",
+        plateNumber: "WSK6894",
+        rating: "2"
         },
 
         { 
         id: 5,
-        brand: "Honda",
-        productionDate: "2022-12-03",
-        plateNumber: "CRW7869",
-        rating: "8"
+        brand: "Toyota",
+        productionDate: "2009-05-20",
+        plateNumber: "VWE9182",
+        rating: "4"
         },
 
         { 
         id: 6,
-        brand: "Mitsubishi",
-        productionDate: "2019-05-03",
-        plateNumber: "VDU1741",
-        rating: "1"
-        },
-
-        { 
-        id: 7,
-        brand: "Mitsubishi",
-        productionDate: "1999-12-21",
-        plateNumber: "UKZ8498",
-        rating: "9"
-        },
-
-        { 
-        id: 8,
-        brand: "BMW",
-        productionDate: "2009-10-22",
-        plateNumber: "PGA4967",
-        rating: "9"
-        },
-
-        { 
-        id: 9,
-        brand: "Mitsubishi",
-        productionDate: "2006-07-16",
-        plateNumber: "OTS6313",
-        rating: "9"
-        },
-
-        { 
-        id: 10,
-        brand: "Audi",
-        productionDate: "2006-07-26",
-        plateNumber: "IXS0262",
-        rating: "3"
-        },
-
-        { 
-        id: 11,
-        brand: "Honda",
-        productionDate: "2010-09-14",
-        plateNumber: "BMT1777",
+        brand: "Mercedes",
+        productionDate: "2010-05-19",
+        plateNumber: "RRZ0170",
         rating: "8"
         },
 
         { 
-        id: 12,
+        id: 7,
         brand: "Toyota",
-        productionDate: "2023-05-11",
-        plateNumber: "NSL1285",
+        productionDate: "1998-04-15",
+        plateNumber: "ZFA3969",
+        rating: "7"
+        },
+
+        { 
+        id: 8,
+        brand: "Mitsubishi",
+        productionDate: "2002-08-17",
+        plateNumber: "YKI4363",
+        rating: "5"
+        },
+
+        { 
+        id: 9,
+        brand: "Audi",
+        productionDate: "1990-07-05",
+        plateNumber: "YVC6456",
+        rating: "1"
+        },
+
+        { 
+        id: 10,
+        brand: "Toyota",
+        productionDate: "2019-01-20",
+        plateNumber: "SQR3545",
+        rating: "2"
+        },
+
+        { 
+        id: 11,
+        brand: "Mitsubishi",
+        productionDate: "2001-06-04",
+        plateNumber: "XDD1239",
+        rating: "3"
+        },
+
+        { 
+        id: 12,
+        brand: "Honda",
+        productionDate: "1994-08-06",
+        plateNumber: "NHM8049",
         rating: "1"
         },
 
         { 
         id: 13,
         brand: "BMW",
-        productionDate: "1998-04-22",
-        plateNumber: "LQE7975",
-        rating: "2"
+        productionDate: "2002-05-20",
+        plateNumber: "ICV0147",
+        rating: "5"
         },
 
         { 
         id: 14,
-        brand: "Audi",
-        productionDate: "2005-11-08",
-        plateNumber: "UYN6661",
-        rating: "6"
+        brand: "Mercedes",
+        productionDate: "1999-05-25",
+        plateNumber: "ABQ6691",
+        rating: "8"
         },
 
         { 
         id: 15,
-        brand: "Honda",
-        productionDate: "2006-09-15",
-        plateNumber: "RCN8575",
-        rating: "3"
+        brand: "Toyota",
+        productionDate: "1993-04-24",
+        plateNumber: "RKJ0494",
+        rating: "9"
         }
 ];
 
